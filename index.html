@@ -1,0 +1,144 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>Eastside Market Redesign</title>
+    <meta name="description" content="Process for redesigning a website">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="./assets/favicon.ico" type="image/x-icon">
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+</head>
+
+<body>
+    <div class="bottom">
+        <div class="section2">
+            <h1>Eastside Market Redesign</h1>
+            <p>In this age of information where people turn to Google to look up anything about
+                everything, the first interaction people have with a business is usually through their website. Now more
+                than ever, it is crucial for businesses to have well-designed websites that are aesthetically pleasing
+                and work on many types of devices and screen sizes.
+            </p>
+            <p>This project aims to redesign the Eastside Marketplace website to be more
+                accessible and responsive to screen resizing while preserving the overall information
+                contained in the original site.
+            </p>
+        </div>
+        <div class="section1 top">
+            <h1>Current Website</h1>
+            <p>Eastside Marketplace is a grocery store located just east of Brown campus and frequented
+                by many members of the community including students. You can check out their current
+                website below.
+            </p>
+            <div class="container">
+                <div class="storyboard-panel">
+                    <img class="empathy-map" src="assets/homepage.jpg" alt="Screen shot of eastsidemarket.com homepage">
+                </div>
+            </div>
+            <div class="container">
+                <form action="https://eastsidemarket.com/" target="_blank">
+                    <input class="btn" type="submit" value="eastsidemarket.com" />
+                </form>
+            </div>
+            <div class="container">
+                <div class="question">
+                    <ul>
+                        <h2>Usability</h2>
+                        <li>Link to directions is a hidden button with white text with no other
+                            way to see the store location
+                        </li>
+                        <li>Link target inconsistencies (some open new tabs some don't)</li>
+                        <li>No breadcrumbs or back button to get to previous pages</li>
+                        <li>Navbar is crowded but also doesn't link to all pages, making it even harder to figure out
+                            where some pages are located in different sections of site</li>
+                    </ul>
+                </div>
+                <div class="question">
+                    <ul>
+                        <h2>Accessibility</h2>
+                        <li>Most images on the front page are missing alt text</li>
+                        <li>Buttons are hidden from view until hovered over</li>
+                        <li>Text color contrast is low, making it hard to read</li>
+                        <li>Interactable buttons are not highlighted when tabbing through the page, in fact some parts
+                            of
+                            the home page are completely inaccessible using tab</li>
+                    </ul>
+                </div>
+            </div>
+            <p>After running the site through WebAIM WAVE, it pointed out things like missing alt text
+                and empty divs that I otherwise would not have noticed. These
+                things are essential for people who rely on screen readers to navigate through the site and
+                must be present for a website to be considered truly accessible.
+            </p>
+            <p>However, there were some things that WAVE missed. For example, there are some hidden buttons with white
+                or
+                neon yellow text that are completely unnoticeable on first glance at the site. The contrast must be
+                higher
+                on these buttons since they pose an accessibility risk.
+            </p>
+        </div>
+        <div class="section1">
+            <h1>Designs</h1>
+            <p>Using the information I gathered from Usability and Accessibilty testing, I went into remedying any
+                problems
+                with a few Lofo-Wireframes of different device sizes.
+            </p>
+            <h2>Lofi-Wireframes</h2>
+            <div class="container">
+                <div class="col">
+                    <h3>Desktop</h3>
+                    <img class="empathy-map" src="./assets/Desktop.jpg">
+                </div>
+                <div class="col">
+                    <h3>Tablet</h3>
+                    <img class="empathy-map" src="./assets/Tablet.jpg">
+                </div>
+                <div class="col">
+                    <h3>Mobile</h3>
+                    <img class="empathy-map" src="./assets/Mobile.jpg">
+                </div>
+            </div>
+            <h2>Visual Style Guide</h2>
+            <p>Next, I moved on to a redesign of buttons, icons, and the navbar. Many of the original buttons were
+                hard to find and didn't offer much in the form of text color contrast. The original navbar gave no
+                indication of which tab you were in, now the current tab is highlighted. I also fiddled around with the
+                idea of incorporating a light and dark mode toggle, which is common for modern websites.
+            </p>
+            <div class="container">
+                <div class="storyboard-panel">
+                    <img class="empathy-map" src="./assets/Style-Guide.jpg">
+                </div>
+            </div>
+            <h2>Hifi-Wireframes</h2>
+            <p>With these designs in mind, I was able to create the components for my Hifi-Prototypes of the site on
+                desktop, tablet, and mobile devices.
+            </p>
+            <p>Since all sections of the design follow a scrolling layout, I decided to use
+                Bootstrap grid instead of flex box.
+                This allows us to easily set built in break points for different screen sizes.
+            </p>
+            <div class="container">
+                <div class="col">
+                    <h3>Desktop</h3>
+                    <img class="empathy-map" src="./assets/Desktop-Hifi.jpg">
+                </div>
+                <div class="col">
+                    <h3>Tablet</h3>
+                    <img class="empathy-map" src="./assets/Tablet-Hifi.jpg">
+                </div>
+                <div class="col">
+                    <h3>Mobile</h3>
+                    <img class="empathy-map" src="./assets/Mobile-Hifi.jpg">
+                </div>
+            </div>
+        </div>
+        <div class="section1">
+            <div class="container">
+                <form action="https://squishymcsquish69.github.io/eastside-redesigned/" target="_blank">
+                    <input class="btn" type="submit" value="Click here for final product" />
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
