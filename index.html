@@ -24,57 +24,40 @@
             </p>
         </div>
         <div class="section1 top">
-            <h1>Sketching and Wireframes</h1>
-            <p>Eastside Marketplace is a grocery store located just east of Brown campus and frequented
-                by many members of the community including students. You can check out their current
-                website below.
-            </p>
-            <div class="container">
-                <div class="storyboard-panel">
-                    <img class="empathy-map" src="assets/homepage.jpg" alt="Screen shot of eastsidemarket.com homepage">
+            <h1>Sketching</h1>
+
+                <!-- Define each of the slides
+                 and write the content -->
+                <img class="slides" src="sketches/harisen_sketch.png" alt="Sketch of BeU App">
+                <img class="slides" src="sketches/ikenna_sketch.png" alt="Sketch of BeU App">
+                <img class="slides" src="sketches/erick_sketch.png" alt="Sketch of BeU App">
+                <img class="slides" src="sketches/robert_sketch.png" alt="Sketch of BeU App">
+
+                <div class="button">
+                    <button class="left_arrow" onclick="plusDivs(-1)">&#10094;</button>
+                    <button class="right_arrow" onclick="plusDivs(+1)">&#10095;</button>
                 </div>
-            </div>
-            <div class="container">
-                <form action="https://eastsidemarket.com/" target="_blank">
-                    <input class="btn" type="submit" value="eastsidemarket.com" />
-                </form>
-            </div>
-            <div class="container">
-                <div class="question">
-                    <ul>
-                        <h2>Usability</h2>
-                        <li>Link to directions is a hidden button with white text with no other
-                            way to see the store location
-                        </li>
-                        <li>Link target inconsistencies (some open new tabs some don't)</li>
-                        <li>No breadcrumbs or back button to get to previous pages</li>
-                        <li>Navbar is crowded but also doesn't link to all pages, making it even harder to figure out
-                            where some pages are located in different sections of site</li>
-                    </ul>
-                </div>
-                <div class="question">
-                    <ul>
-                        <h2>Accessibility</h2>
-                        <li>Most images on the front page are missing alt text</li>
-                        <li>Buttons are hidden from view until hovered over</li>
-                        <li>Text color contrast is low, making it hard to read</li>
-                        <li>Interactable buttons are not highlighted when tabbing through the page, in fact some parts
-                            of
-                            the home page are completely inaccessible using tab</li>
-                    </ul>
-                </div>
-            </div>
-            <p>After running the site through WebAIM WAVE, it pointed out things like missing alt text
-                and empty divs that I otherwise would not have noticed. These
-                things are essential for people who rely on screen readers to navigate through the site and
-                must be present for a website to be considered truly accessible.
-            </p>
-            <p>However, there were some things that WAVE missed. For example, there are some hidden buttons with white
-                or
-                neon yellow text that are completely unnoticeable on first glance at the site. The contrast must be
-                higher
-                on these buttons since they pose an accessibility risk.
-            </p>
+
+                <script>
+                    var slideIndex = 1;
+                    showDivs(slideIndex);
+
+                    function plusDivs(n) {
+                        showDivs(slideIndex += n);
+                    }
+
+                    function showDivs(n) {
+                        var i;
+                        var x = document.getElementsByClassName("slides");
+                        if (n > x.length) {slideIndex = 1}
+                        if (n < 1) {slideIndex = x.length}
+                        for (i = 0; i < x.length; i++) {
+                            x[i].style.display = "none";
+                        }
+                        x[slideIndex-1].style.display = "block";
+                    }
+                </script>
+
         </div>
         <div class="section1">
             <h1>Designs</h1>

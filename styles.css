@@ -81,6 +81,8 @@ li {
     border-radius: 5rem;
 }
 
+
+
 .section2 {
     padding: 3% 6% 3% 6%;
 }
@@ -110,4 +112,48 @@ li {
     .section1 {
         margin: 2rem;
     }
+}
+
+
+/* ADDING */
+
+/* Style each of the sides
+with a fixed width and height */
+
+.slides {
+    max-width: 80vw;
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.left_arrow {
+    background-color: #56c9fb;
+    border-radius: 10px;
+    border: 4px double #cccccc;
+    color: #eeeeee;
+    text-align: center;
+    font-size: 28px;
+    /* padding: 20px; */
+    width: 5vw;
+    /* height: 3vh; */
+    cursor: pointer;
+    margin: 2vw;
+}
+
+.right_arrow {
+    background-color: #56c9fb;
+    border-radius: 10px;
+    border: 4px double #cccccc;
+    color: #eeeeee;
+    text-align: center;
+    font-size: 28px;
+    /* padding: 20px; */
+    width: 5vw;
+    /* height: 3vh; */
+    cursor: pointer;
+    margin: 2vw;
 }
