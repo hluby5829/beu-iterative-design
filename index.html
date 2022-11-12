@@ -1,127 +1,215 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
-
-<head>
+  <head>
     <title>BeU Iterative Design</title>
-    <meta name="description" content="Process for redesigning a website">
-    <link rel="stylesheet" href="styles.css">
-<!--    <link rel="icon" href="./assets/favicon.ico" type="image/x-icon"> Don't have this asset?-->
-    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
-</head>
+    <meta name="description" content="Process for redesigning a website" />
+    <link rel="stylesheet" href="styles.css" />
+    <!--    <link rel="icon" href="./assets/favicon.ico" type="image/x-icon"> Don't have this asset?-->
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat"
+      rel="stylesheet"
+    />
+  </head>
 
-<body>
+  <body>
     <div class="bottom">
-        <div class="section2">
-            <h1>BeU Iterative Design</h1>
-            <p>BeU delivery is an on-demand food delivery service in Africa similar to DoorDash or UberEats.
-                They are the #1 food delivery service in Ethiopia, 67% cheaper than the competition, with plans
-                to expand their services to new markets and eventually become the super APP of Africa.
-            </p>
-            <p>Our group is designing a mobile interface for beU because we felt that a lot of users would be
-                interacting with the application on their phones as is typical from DoorDash and UberEats users.
-                Users who would be impacted are those with slow wifi speeds or low data left in their monthly plans.
-                PLEASE ADD MORE RORISENNA!!
-            </p>
+      <div class="section2">
+        <h1>BeU Iterative Design</h1>
+        <p>
+          BeU delivery is an on-demand food delivery service in Africa similar
+          to DoorDash or UberEats. They are the #1 food delivery service in
+          Ethiopia, 67% cheaper than the competition, with plans to expand their
+          services to new markets and eventually become the super APP of Africa.
+        </p>
+        <p>
+          Our group is designing a mobile interface for beU because we felt that
+          most users would be interacting with the application on their
+          phones similar to DoorDash and UberEats. Currently a majority of the 
+          Ethiopian population lacks internet, with only 20.6%  
+          surveyed to have consistent internet access in 2021. Furthermore mobile 
+          devicecs occupy the primary market share in Ethiopia with the breakdown
+          being 63.24% Mobile, 34.29% Desktop, and 2.3% Tablet. This is why
+          a mobile prototype seemed the most viable option for our group.
+          
+          
+        </p>
+      </div>
+      <div class="section1 top">
+        <h1>Sketching</h1>
+        <p>After reading the description of the BeU mission, we came up with a few
+            sketches that we thought achieved the startup's goal. Each person in our
+            group came up with 3 frames each.
+        </p>
+        <!-- Define each of the slides
+                and write the content -->
+        <div class="container">
+        <div class="slides">
+            <img
+            class="slides-img height-cap"
+            src="sketches/harisen_sketch.png"
+            alt="Sketch of BeU App"
+          />
         </div>
-        <div class="section1 top">
-            <h1>Sketching</h1>
-
-                <!-- Define each of the slides
-                 and write the content -->
-                <img class="slides" src="sketches/harisen_sketch.png" alt="Sketch of BeU App">
-                <img class="slides" src="sketches/ikenna_sketch.png" alt="Sketch of BeU App">
-                <img class="slides" src="sketches/erick_sketch.png" alt="Sketch of BeU App">
-                <img class="slides" src="sketches/robert_sketch.png" alt="Sketch of BeU App">
-
-                <div class="button">
-                    <button class="left_arrow" onclick="plusDivs(-1)">&#10094;</button>
-                    <button class="right_arrow" onclick="plusDivs(+1)">&#10095;</button>
-                </div>
-
-                <script>
-                    var slideIndex = 1;
-                    showDivs(slideIndex);
-
-                    function plusDivs(n) {
-                        showDivs(slideIndex += n);
-                    }
-
-                    function showDivs(n) {
-                        var i;
-                        var x = document.getElementsByClassName("slides");
-                        if (n > x.length) {slideIndex = 1}
-                        if (n < 1) {slideIndex = x.length}
-                        for (i = 0; i < x.length; i++) {
-                            x[i].style.display = "none";
-                        }
-                        x[slideIndex-1].style.display = "block";
-                    }
-                </script>
-
+        <div class="slides">
+            <img
+            class="slides-img height-cap"
+            src="sketches/ikenna_sketch.png"
+            alt="Sketch of BeU App"
+          />
         </div>
-        <div class="section1">
-            <h1>Designs</h1>
-            <p>Using the information I gathered from Usability and Accessibilty testing, I went into remedying any
-                problems
-                with a few Lofo-Wireframes of different device sizes.
-            </p>
-            <h2>Lofi-Wireframes</h2>
-            <div class="container">
-                <div class="col">
-                    <h3>Desktop</h3>
-                    <img class="empathy-map" src="./assets/Desktop.jpg">
-                </div>
-                <div class="col">
-                    <h3>Tablet</h3>
-                    <img class="empathy-map" src="./assets/Tablet.jpg">
-                </div>
-                <div class="col">
-                    <h3>Mobile</h3>
-                    <img class="empathy-map" src="./assets/Mobile.jpg">
-                </div>
-            </div>
-            <h2>Visual Style Guide</h2>
-            <p>Next, I moved on to a redesign of buttons, icons, and the navbar. Many of the original buttons were
-                hard to find and didn't offer much in the form of text color contrast. The original navbar gave no
-                indication of which tab you were in, now the current tab is highlighted. I also fiddled around with the
-                idea of incorporating a light and dark mode toggle, which is common for modern websites.
-            </p>
-            <div class="container">
-                <div class="storyboard-panel">
-                    <img class="empathy-map" src="./assets/Style-Guide.jpg">
-                </div>
-            </div>
-            <h2>Hifi-Wireframes</h2>
-            <p>With these designs in mind, I was able to create the components for my Hifi-Prototypes of the site on
-                desktop, tablet, and mobile devices.
-            </p>
-            <p>Since all sections of the design follow a scrolling layout, I decided to use
-                Bootstrap grid instead of flex box.
-                This allows us to easily set built in break points for different screen sizes.
-            </p>
-            <div class="container">
-                <div class="col">
-                    <h3>Desktop</h3>
-                    <img class="empathy-map" src="./assets/Desktop-Hifi.jpg">
-                </div>
-                <div class="col">
-                    <h3>Tablet</h3>
-                    <img class="empathy-map" src="./assets/Tablet-Hifi.jpg">
-                </div>
-                <div class="col">
-                    <h3>Mobile</h3>
-                    <img class="empathy-map" src="./assets/Mobile-Hifi.jpg">
-                </div>
-            </div>
+        <div class="slides">
+            <img
+            class="slides-img height-cap"
+            src="sketches/erick_sketch.png"
+            alt="Sketch of BeU App"
+          />
         </div>
-        <div class="section1">
-            <div class="container">
-                <form action="https://squishymcsquish69.github.io/eastside-redesigned/" target="_blank">
-                    <input class="btn" type="submit" value="Click here for final product" />
-                </form>
-            </div>
+        <div class="slides">
+            <img
+            class="slides-img height-cap"
+            src="sketches/robert_sketch.png"
+            alt="Sketch of BeU App"
+          />
         </div>
+        </div>
+
+          <div class="button">
+            <button class="btn" onclick="plusDivs(-1)">&#10094;</button>
+            <button class="btn" onclick="plusDivs(+1)">&#10095;</button>
+          </div>
+
+          <script>
+            var slideIndex = 1;
+            showDivs(slideIndex);
+      
+            function plusDivs(n) {
+              showDivs((slideIndex += n));
+            }
+      
+            function showDivs(n) {
+              var i;
+              var x = document.getElementsByClassName("slides");
+              if (n > x.length) {
+                slideIndex = 1;
+              }
+              if (n < 1) {
+                slideIndex = x.length;
+              }
+              console.log(x.length)
+              for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+              }
+      
+              x[slideIndex - 1].style.display = "block";
+            }
+          </script>
+
+        <h1>Wireframe</h1>
+        <p>After some deliberation, we picked the best aspects of all of our designs
+            and came up with a few wireframes to get a rough idea of our final design.
+        </p>
+        <img class="wireframe" src="./wireframe/entire_wireframe.jpg" alt="Lofi wireframe of BeU App"></img>
+     </div>
+      <div class="section1">
+        <h1>Hifi-Wireframes</h1>
+        <h2>First Iteration Feedback</h2>
+        <ul>    
+          <li>"In the cart it would be nice to change the quantity of items numerically."</li>
+          <li>"It would be helpful to have a dropdown button to read more on the restaurant page to read the rest of the description"</li>
+          <li>"I’d put the user profile picture in the nav bar in the bottom right corner instead of the generic icon"</li>
+          <li>"There are a lot of inconsistent fonts and weights used"</li>
+        </ul>
+        <p>
+          After receiving critiques from our classsmates, we began iterating and improving our prototype. Above are some examples
+          of critiques we received that were then fixed in our current version. They allowed us to provide a more user friendly prototype
+          that better encapsulated what we hoped to accomplish.
+        </p>
+        <div class="container">
+        <form
+            action="https://www.figma.com/proto/NLYVyCj9EhQvfBf8ewwS1X/BeU-Iterative-Design?page-id=12%3A68&node-id=12%3A69&viewport=1422%2C-187%2C0.84&scaling=scale-down&starting-point-node-id=12%3A71"
+            target="_blank"
+          >
+            <input
+              class="btn"
+              type="submit"
+              value="Our Finished Prototype :D"
+            />
+          </form>
+        </div>
+        
+      </div>
+      <div class="section1">
+        <h1>User Testing Analysis and Critique</h1>
+
+        <p>Imagine you are an office worker looking to get a quick lunch delivered to your home. Place a delivery order from Moyo's Cafe.</p>
+        <ul>
+          <li>Take as much time as you need to explore this website. Move on to the next task when you're ready.</li>
+          <li>Think aloud as you navigate the prototype!</li>
+          <li>Browse the available restaurants that are open for delivery.</li>
+          <li>Find out how many items are currently in your cart.</li>
+        </ul>
+
+        <div class="container">
+          <form
+            action="https://app.usertesting.com/v/13c8addc-3c35-435a-9e57-631e142a279b?encrypted_video_handle=482c80a8-090e-4c82-b768-cce590566d55#!/notes"
+            target="_blank"
+          >
+            <input
+              class="btn"
+              type="submit"
+              value="User Testing Video #1"
+            />
+          </form>
+        </div>
+
+        <div class="container">
+          
+          <form
+            action="https://app.usertesting.com/v/14ff6ef3-3942-4449-beb5-838ad5592c69?encrypted_video_handle=e6455423-1a5b-424f-8943-7f2dce94830b#!/notes&shared_via=link"
+            target="_blank"
+          >
+            <input
+              class="btn"
+              type="submit"
+              value="User Testing Video #2"
+            />
+          </form>
+        </div>
+
+        <div class="container">
+          
+          <form
+            action="https://app.usertesting.com/v/2a485b6b-d0a6-4d66-a0d7-489d34802c08?encrypted_video_handle=9520f7af-33e1-4bfc-9776-31bad0d25742#!/notes&shared_via=link"
+            target="_blank"
+          >
+            <input
+              class="btn"
+              type="submit"
+              value="User Testing Video #3"
+            />
+          </form>
+        </div>
+        <h2>Feedback</h2>
+        <p>Overall...</p>
+
+        <ul>
+          <li>User #3 was also appreciative of the deals being front and center on the homescreen.</li>
+          <li>For the first subtask, some mentioned how easy it was to navigate 
+            the app and commented on how useful certain features were (time to 
+            deliver and rows for "Popular Restaurants", "Favorite Restaurants",
+            "Order Again", etc.)</li>
+          <li>Most users noticed how not everything was interactable which 
+            confused them as they tried to get to a specific restaurant page.</li>
+          <li>Many of the user testers noticed a few issues we overlooked such as missing a picture for one of our restaurants, and missing some text on another one.</li>
+          <li>They also noted how useful it would be to have a menu bar at the 
+            top of the restaurant page to quickly navigate to the entrees section 
+            or drinks section.</li>
+          <li>The user testers universally enjoyed the friends feature, and were excited at the future possibilities for it.</li>
+          <li>Many were saddened at the lack of ability to use a drop down to read more about a restaurants information.</li>
+          <li>They pointed out a general appreciation for all 
+            the information on a restaurants page such as: rating, hours, and menu.</li>
+        </ul>
+      </div>
     </div>
-</body>
-
+  </body>
 </html>
