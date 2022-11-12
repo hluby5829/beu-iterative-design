@@ -11,6 +11,10 @@ li {
   padding: 5px;
 }
 
+.beu {
+  max-width: 1em;
+}
+
 .bottom {
   padding-bottom: 5%;
 }
